@@ -11,8 +11,8 @@ python:
 install: "pip install -r requirements.txt"
 
 before_install:
-- docker pull ubuntu:15.10
+- docker pull diblab/eel-pond
 
 # command to run tests
 script:
-- docker run ubuntu:15.10 /bin/sh -c "echo hello, world"
+- docker run diblab/eel-pond /bin/sh -c "ls /root"
