@@ -12,11 +12,10 @@ install: "pip install -r requirements.txt"
 
 before_install:
 - docker pull diblab/eel-pond:0.1
-
-# command to run tests
-script:
 - curl -O https://s3.amazonaws.com/public.ged.msu.edu/mrnaseq-subset.tar
 - mkdir data
 - cd data && tar xf ../mrnaseq-subset.tar
+
+# command to run tests
+script:
 - docker run -v $(pwd):/mnt diblab/eel-pond:0.1 /bin/sh -c "ls /mnt"
-- docker run diblab/eel-pond:0.1 PROJECT=/foo /bin/sh -c 'echo $PROJECT'
