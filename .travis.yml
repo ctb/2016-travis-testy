@@ -20,6 +20,7 @@ install:
 # command to run tests
 script:
 - docker run -v $(pwd):/mnt diblab/eel-pond:0.1 /bin/sh -c "ls -R /mnt"
+- docker run -v $(pwd):/mnt diblab/eel-pond:0.1 /bin/sh -c "/mnt/update-software.sh"
 - docker run -v $(pwd):/mnt diblab/eel-pond:0.1 /bin/sh -c "PROJECT=/mnt /mnt/1-quality.rst.sh"
 - docker run -v $(pwd):/mnt diblab/eel-pond:0.1 /bin/sh -c "PROJECT=/mnt /mnt/2-diginorm.rst.sh"
 - docker run -v $(pwd):/mnt diblab/eel-pond:0.1 /bin/sh -c "PROJECT=/mnt /mnt/3-big-assembly.rst.sh"
