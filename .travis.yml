@@ -13,7 +13,6 @@ install: "pip install -r requirements.txt"
 before_install:
 - docker pull ubuntu:15.10
 
-
 # command to run tests
 script:
 - docker run ubuntu:15.10 /bin/sh -c "echo hello, world"
