@@ -11,8 +11,8 @@ python:
 install: "pip install -r requirements.txt"
 
 before_install:
-- docker pull diblab/eel-pond
+- docker pull diblab/eel-pond:0.1
 
 # command to run tests
 script:
-- docker run diblab/eel-pond /bin/sh -c "ls /root"
+- docker run diblab/eel-pond:0.1 /bin/sh -c "ls /root"
