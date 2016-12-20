@@ -5,5 +5,13 @@ set -e
 
 source ~/pondenv/bin/activate
 
-pip install git+https://github.com/dib-lab/screed.git@master
-pip install git+https://github.com/dib-lab/khmer.git@master
+git clone https://github.com/dib-lab/khmer.git -b master
+cd screed
+make all test install
+cd ..
+
+git clone https://github.com/dib-lab/khmer.git -b master
+cd khmer
+make all test install
+cd ..
+
