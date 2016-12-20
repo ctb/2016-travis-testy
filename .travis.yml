@@ -11,7 +11,8 @@ before_install:
 - docker pull diblab/eel-pond:0.1
 
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install:
+- "pip install -r requirements.txt"
 - curl -O https://s3.amazonaws.com/public.ged.msu.edu/mrnaseq-subset.tar
 - mkdir data
 - cd data && tar xf ../mrnaseq-subset.tar; cd ..
