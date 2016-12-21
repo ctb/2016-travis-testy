@@ -7,7 +7,7 @@ source ~/pondenv/bin/activate
 
 pip install pytest nose
 
-git clone https://github.com/dib-lab/screed.git -b master
+git clone https://github.com/dib-lab/screed.git -b v0.9
 cd screed
 make all
 make install
