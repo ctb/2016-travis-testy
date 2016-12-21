@@ -6,12 +6,12 @@ set -e
 source ~/pondenv/bin/activate
 
 git clone https://github.com/dib-lab/khmer.git -b master
-cd screed
+cd khmer
 make all test install
 cd ..
 
 git clone https://github.com/dib-lab/khmer.git -b master
-cd khmer
+cd screed
 make all test install
 cd ..
 
