@@ -5,7 +5,7 @@ set -e
 
 source ~/pondenv/bin/activate
 
-pip install pyest
+pip install pytest
 
 git clone https://github.com/dib-lab/khmer.git -b master
 cd khmer
