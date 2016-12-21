@@ -14,7 +14,7 @@ make test || echo tests failed, continuing anyway
 make install
 cd ..
 
-git clone https://github.com/dib-lab/khmer.git -b master
+git clone https://github.com/dib-lab/khmer.git -b v2.0
 cd khmer
 make all
 make test || echo tests failed, continuing anyway
