@@ -7,6 +7,8 @@ set -e
 
 ### code block at 1-quality.rst:12
 
+pip show screed
+
 set -u
 printf "\nMy raw data is in $PROJECT/data/, and consists of $(ls -1 ${PROJECT}/data/*.fastq.gz | wc -l) files\n\n"
 set +u
